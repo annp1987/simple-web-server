@@ -78,7 +78,7 @@ class AuthMiddleware(object):
         return _factory
 
 def main():
-    application = loadapp('config:/home/stack/work/simple-web-server/config.ini')
+    application = loadapp('config:/usr/local/etc/simple-web-server/config.ini')
     server = eventlet.spawn(wsgi.server,
                             eventlet.listen(('', 8080)), application)
     server.wait()
