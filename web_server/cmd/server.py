@@ -77,11 +77,13 @@ class AuthMiddleware(object):
             return cls(application)
         return _factory
 
+
 def main():
     application = loadapp('config:/usr/local/etc/simple-web-server/config.ini')
     server = eventlet.spawn(wsgi.server,
                             eventlet.listen(('', 8080)), application)
     server.wait()
+
 
 if '__main__' == __name__:
     main()

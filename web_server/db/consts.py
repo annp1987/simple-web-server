@@ -1,0 +1,1 @@
+UUID_FIELD_SIZE = 36

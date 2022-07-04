@@ -5,8 +5,4 @@ try:
 except ImportError:
     pass
 
-setuptools.setup(
-    name='simple-web-server',
-    version='1.0.0',
-    setup_requires=['pbr'],
-    pbr=True)
+setuptools.setup(name='simple-web-server', setup_requires=['pbr'], pbr=True)
